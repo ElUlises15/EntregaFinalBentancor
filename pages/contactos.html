@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto | Contacto</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="../style/estilos.css" />
+  </head>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="buscar.html">BUSCAR</a></li>
+        <li><a href="favoritos.html">FAVORITOS</a></li>
+        <li><a href="contactos.html">CONTACTO</a></li>
+      </ul>
+      <button id="modoOscuroBtn">Modo Oscuro</button>
+    </nav>
+  </header>
+  <body>
+    <main>
+      <div class="container">
+        <form
+          id="contactForm"
+          action=""
+          method="post"
+          onsubmit="return validateForm()"
+        >
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+        <div id="statusMessage"></div>
+      </div>
+    </main>
+    <footer class="footerIncompleto">
+      <div class="redes-sociales">
+        <a
+          href="https://www.facebook.com/ulisesignacio.bentancor/"
+          target="_blank"
+          ><img src="../media/facebook.png" alt="Facebook" class="fotos"
+        /></a>
+        <a href="https://www.instagram.com/bentancoruly/" target="_blank"
+          ><img src="../media/instagram.png" alt="Instagram" class="fotos"
+        /></a>
+      </div>
+    </footer>
+    <script src="../javascript/script.js"></script>
+    <script src="../javascript/main.js"></script>
+  </body>
+</html>
